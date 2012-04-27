@@ -1,0 +1,25 @@
+#theme-help { padding: 20px 10px 0 0; font-family: Verdana, Arial, Helvetica, sans-serif; }
+#theme-help #inline-readme { counter-reset: third_heading; }
+#theme-help h1, #theme-help h2, #theme-help h3,
+#theme-help h4, #theme-help h5, #theme-help h6 { color: #464646; font-family: Georgia, "Times New Roman", Times, serif; font-weight: normal; font-style: italic; text-shadow: 1px 1px 1px #FFF; }
+#theme-help h1 { font-size: 32px; line-height: 36px; margin: 10px 0 20px; }
+#theme-help h2 { font-size: 32px; line-height: 36px; margin: 10px 0 20px; counter-reset: third_heading; }
+#theme-help h3 { font-size: 24px; line-height: 28px; margin: 8px 0 16px; counter-reset: fourth_heading; }
+#theme-help h4 { font-size: 18px; line-height: 20px; margin: 6px 0 14px; }
+#theme-help h5 { font-size: 16px; line-height: 18px; margin: 4px 0 10px; }
+#theme-help h6 { font-size: 14px; line-height: 14px; margin: 2px 0 8px; }
+/*#theme-help h6 { font-size: 12px; line-height: 12px; margin: 2px 0 2px; }*/
+
+#theme-help ol > li > h2:before { content: counter(second_heading) ". "; counter-increment: second_heading; }
+#theme-help ol > li > h3:before { content: counter(third_heading) ". "; counter-increment: third_heading; }
+#theme-help ol > li > h4:before { content: counter(fourth_heading) ". "; counter-increment: fourth_heading; }
+
+#theme-help ol { font: normal 18px Georgia, "Times New Timan", Times, serif; counter-reset: second_heading; list-style-type: none; margin-left: 20px; }
+#theme-help ol ul { list-style: disc; margin-left: 35px; }
+#theme-help p { margin: 5px 0 10px; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+#theme-help .admin-path { padding: 1px 3px; background: #E6E6E3; }
+#theme-help code { display:block; background: #FFFFE0; border: solid 1px #ddd; margin: 10px 0; padding: 5px; white-space: pre-wrap; font: bold normal 14px/16px "Courier New", Courier; }
+
+#summary-holder { margin-left: 20px; }
+#summary-holder ol { list-style-type: decimal; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+#summary-holder ol ol { padding-top: 3px; }

@@ -1,0 +1,56 @@
+.cl { height: 0; line-height: 0; font-size: 0; clear: both; }
+.ecf-field-container { margin-bottom: 4px; }
+.ecf-label {
+	width: 150px;
+	text-align: right; 
+	vertical-align: top;
+	padding: 5px 10px 0 10px;
+}
+
+.ecf-ecf_fieldtext, .ecf-ecf_fieldtextarea {
+	width: 100%;
+}
+.ecf-ecf_fieldmedia { width: 70%; margin-right: 15px; }
+.ecf-ecf_fieldaddress {width: 400px;}
+.ecf-view_image {
+	display: block;
+	height: auto !important; /* IE6 hack */
+	height: 100px; /* IE6 hack */
+	width: auto;
+	max-height: 100px;
+	max-width: 500px;
+	border: 1px solid #DFDFDF;
+	padding: 1px;
+	margin-top: 5px;
+}
+.ecf-view_file {
+	padding-left: 10px;
+	font-weight: bold;
+}
+.ecf-description {
+	color: #666666;
+	font-size: 11px;
+}
+.ecf-set-list {
+	padding: 5px 0px;
+}
+.ecf-set-list p {
+	margin: 0 !important;
+}
+.ecf-action { margin-left: 10px; text-decoration: none; }
+.ecf-action-cell { width: 140px; vertical-align: top; padding-top: 4px }
+.ecf-src-row .ecf-description { display: none; }
+#side-info-column .ecf-label {
+	width: 0;
+}
+
+.ecf-field-container table.mceLayout { border: 1px solid #cccccc !important; }
+.ecf-file-description { padding: 10px 0px; }
+
+.swfupload { margin: 0px !important; }
+.swf-upload-button-wrap { display: inline; float: left; }
+.swf-upload-progress-wrap { display: none; float: left; width: 300px; margin-left: 20px; margin-top: 7px; padding: 2px 0px; border-left: 1px solid #99b3cc; border-right: 1px solid #99b3cc; }
+.swf-upload-progress { height: 5px; background: #99b3cc; display: block; width: 0px; }
+.swf-upload-progress-error { background: #FF0000; }
+.swf-upload-progress-success { background: #00AA00; }
+.swf-upload-temp-filename { display: none; float: left; margin-left: 5px; color: #999999; background: #F1F1F1; padding: 5px 9px; font-style: italic; border-radius: 10px; -moz-border-radius: 10px; -webkit-broder-radius: 10px; }
