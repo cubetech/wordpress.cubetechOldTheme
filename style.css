@@ -1,7 +1,6 @@
 /*
-Theme name: cubetech Theme
-Description: Theme für www.cubetech.ch
-Author: cubetech GmbH
+Theme name: Cubetech
+Description: Custom Theme
 */
 
 /******* Cubetech WordPress CSS *******/
@@ -137,8 +136,8 @@ h1#logo a { display: block; background: url(images/logo.png) no-repeat 0 0; heig
 .b-head .intro h2 span { display: block; font-size: 15px; line-height: 16px; color: #f9f9f9; font-family: 'HelveticaNeueRegular', arial, sans-serif; padding: 0 0 0 4px; }
 
 #navigation { width: 166px; float: left; display: inline; padding: 13px 39px 0 50px; text-align: right; }
-#navigation ul li { display: block; font-size: 16px; line-height: 16px; font-weight: normal; height: 16px; padding: 2px 0; } 
-#navigation ul li a { display: block; color: #ffffff; height: 16px; text-transform: uppercase; text-shadow: #030303 0 1px 1px; padding: 0 13px 0 0; } 
+#navigation ul li { display: block; font-size: 16px; line-height: 20px; font-weight: normal; height: 20px; } 
+#navigation ul li a { display: block; color: #ffffff; height: 20px; text-transform: uppercase; text-shadow: #030303 0 1px 1px; padding: 0 13px 0 0; } 
 #navigation ul li a:hover  { text-decoration: none;  }
 #navigation ul li.current-menu-item a { color: #19191a; border-right: solid 3px #ef1e1e; }
 #navigation ul li.current-menu-item a:hover { text-shadow: #030303 0 1px 1px; }
