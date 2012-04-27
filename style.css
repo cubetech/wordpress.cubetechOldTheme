@@ -137,7 +137,7 @@ h1#logo a { display: block; background: url(images/logo.png) no-repeat 0 0; heig
 
 #navigation { width: 166px; float: left; display: inline; padding: 13px 39px 0 50px; text-align: right; }
 #navigation ul li { display: block; font-size: 16px; line-height: 20px; font-weight: normal; height: 20px; } 
-#navigation ul li a { display: block; color: #ffffff; height: 20px; text-transform: uppercase; text-shadow: #030303 0 1px 1px; padding: 0 13px 0 0; } 
+#navigation ul li a { display: block; color: #ffffff; height: 1.2em; text-transform: uppercase; text-shadow: #030303 0 1px 1px; padding: 0.2em 13px 0 0; } 
 #navigation ul li a:hover  { text-decoration: none;  }
 #navigation ul li.current-menu-item a { color: #19191a; border-right: solid 3px #ef1e1e; }
 #navigation ul li.current-menu-item a:hover { text-shadow: #030303 0 1px 1px; }
