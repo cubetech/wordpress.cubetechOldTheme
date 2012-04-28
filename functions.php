@@ -10,6 +10,9 @@ function theme_init_theme() {
     	wp_enqueue_script('jquery-cufon', get_bloginfo('stylesheet_directory') . '/js/cufon-yui.js', array('jquery'), '1.0');
         wp_enqueue_script('jquery-Ubuntu', get_bloginfo('stylesheet_directory') . '/js/Ubuntu_bold_700.font.js', array('jquery'), '1.0');
         wp_enqueue_script('jquery-functions', get_bloginfo('stylesheet_directory') . '/js/functions.js', array('jquery', 'jquery-flexslider', 'jquery-Ubuntu', 'jquery-cufon'), '1.0');
+	wp_enqueue_style('forms', get_bloginfo('stylesheet_directory') . '/forms.css');
+	wp_enqueue_style('opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+	wp_enqueue_style('ubuntu', 'http://fonts.googleapis.com/css?family=Ubuntu:700');
     }
 }
 add_action('init', 'theme_init_theme');

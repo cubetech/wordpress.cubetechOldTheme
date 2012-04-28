@@ -19,7 +19,6 @@ jQuery(function($) {
             this.value = this.title;
         }
     });
-    $('.gfield_label').hide();
     $('#footer .f-cols ul li:first').addClass('first');
     $('#footer .f-cols ul li:last').addClass('last');
 
