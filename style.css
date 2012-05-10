@@ -79,7 +79,7 @@ h1#logo a { display: block; background: url(images/logo.png) no-repeat 0 0; heig
 .social a:hover { background-position: 0 bottom; }
 
 #head { height: 127px; padding: 65px 0 0 0; }
-#head .hello-text { float: left; display: inline; padding: 9px 0 0 34px; height: 54px; background: url(images/hello-text.png) no-repeat 0 0; width: 55%; font-size: 17px; line-height: 21px; color: #5c5c5c; }
+#head .hello-text { float: left; display: inline; padding: 9px 0 0 34px; height: 54px; background: url(images/hello-text.png) no-repeat 0 0; width: 45%; font-size: 17px; line-height: 21px; color: #5c5c5c; }
 #head .r-box { float: right; display: inline; padding: 5px 19px 0 0; }
 #head .r-box .social { padding: 0 0 6px 0; text-align: right; }
 #head .r-box .social a { float: right; }
