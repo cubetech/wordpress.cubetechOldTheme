@@ -1,6 +1,7 @@
 jQuery(function($) {
     Cufon.replace('#navigation ul li a', { hover: true, textShadow: '#030303 0 1px 1px;', fontFamily: 'Ubuntu_bold', hover: { textShadow: '#ca3035 1px 1px 7px, #ca3035 -1px -1px 7px;' }}); 
-    Cufon.replace('#navigation ul li a.active', { hover: false });
+    $('#navigation ul li.current_page_item a').addClass('active');
+    Cufon.replace('#navigation ul li a.active', { hover: false, textShadow: '#030303 1px 2px 1px;' });
     $('.three-cols li:last').addClass('last');
     
     $('.ginput_container input').each(function(){
@@ -20,7 +21,8 @@ jQuery(function($) {
         }
     });
     $('#footer .f-cols ul li:first').addClass('first');
-    $('#footer .f-cols ul li:last').addClass('last');
+    $('#f-cols').children('ul').children('li:last').addClass('last');
+    $(".menu-item:last").html($(".menu-item:last").html().replace("</a>&nbsp;|","</a>"));
 
     $('#search .field-wrapper input.field').focus(function(){
     	$(this).animate({'width': '162'});

@@ -13,7 +13,7 @@ function theme_render_comment($comment, $args, $depth) {
 		    <div class="info">
 		    	<span class="name">
 		        <?php comment_author_link() ?>
-		        says 
+		        schreibt am  
 		        <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
 		    		<?php comment_date() ?> <?php comment_time() ?>
 		    	</a>
@@ -51,7 +51,7 @@ function theme_comments_render_list($callback) {
 	?>
 	<?php if ( have_comments() ) : ?>
 		<div class="cl">&nbsp;</div>
-		<h3><?php comments_number('No Responses', 'One Response', '% Responses' );?></h3>
+		<h3><?php comments_number('Keine Antworten', 'Eine Antwort', '% Antworten' );?></h3>
 		<ol class="all-comments">
 			<?php wp_list_comments('callback=' . $callback); ?>
 		</ol>
@@ -66,7 +66,7 @@ function theme_comments_render_list($callback) {
 		<?php if ( comments_open() ) : ?>
 	        <!-- If comments are open, but there are no comments. -->
 		 <?php else : // comments are closed ?>
-			<p class="nocomments">Comments are closed.</p>
+			<p class="nocomments">Kommentare sind geschlossen.</p>
 		<?php endif; ?>
 	<?php endif; ?>
 	<?php

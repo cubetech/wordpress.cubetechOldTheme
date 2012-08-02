@@ -8,9 +8,9 @@
 			<div id="content">
 				<h2 class="pagetitle">
 					<?php if (is_category()) { ?>
-						Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category
+						Archiv f&uuml;r die Kategorie &#8216;<?php single_cat_title(); ?>&#8217;
 					<?php } elseif( is_tag() ) { ?>
-						Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;
+						Beitr&auml;ge, die mit &#8216;<?php single_tag_title(); ?>&#8217 getaggt sind;
 					<?php } elseif (is_day()) { ?>
 						Archive for <?php the_time('F jS, Y'); ?>
 					<?php } elseif (is_month()) { ?>
@@ -20,7 +20,7 @@
 					<?php } elseif (is_author()) { ?>
 						Author Archive
 					<?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-						Blog Archives
+						Blogarchive
 					<?php } ?>
 				</h2>
 				<br />

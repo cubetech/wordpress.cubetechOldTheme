@@ -157,7 +157,12 @@ function three_columns_shortcode($atts, $content) {
     return clean_shortcode_content('<div class="three-cols">' . $content . '</div>');  
 }
 
+function two_columns_shortcode($atts, $content) {
+    return clean_shortcode_content('<div class="small-two-cols">' . $content . '</div>');  
+}
+
 add_shortcode('three_columns', 'three_columns_shortcode');
+add_shortcode('two_columns', 'two_columns_shortcode');
 
 add_shortcode('section', 'section_shortcode');
 
@@ -277,7 +282,7 @@ function cc_breadcrumbs($before='<div class="breadcrumbs">', $glue=' / ', $after
             ));
         } else if (is_search()) {
             array_push($stack, array(
-                'title' => 'Search results',
+                'title' => 'Suchresultate',
                 'link' => '#'
             ));
         }
@@ -315,4 +320,35 @@ function cc_category_parents($cat_id) {
     return $return;
 }
 /* Custom code goes above this line. */
+
+/*********************************
+Description:  Zeigt bestimmte Bildformate immer in der Lightbox an,
+wenn das Plugin "jQuery Lightbox For Native Galleries" installiert ist.
+Author:       Artur Weigandt
+Author URI:   http://www.wlabs.de
+*********************************/
+add_action('wp_footer', 'wl_all_images_in_lightbox');
+function wl_all_images_in_lightbox()
+{
+    //Ist das jQueryLightboxForNativeGalleries-Plugin installiert?
+    if(!class_exists('jQueryLightboxForNativeGalleries'))
+        return;
+ 
+    //Bild-Typen angeben, die in der Lightbox angezeigt werden sollen
+    $image_types = array('jpg', 'jpeg', 'gif', 'png');
+ 
+    //Abmasse der Lightbox
+    $maxWidth = "95%";
+    $maxHeight = "95%";
+ 
+    ?>
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+<?php for($i = 0; $i < count($image_types); $i++) { ?>
+        $('a[href$=".<?php echo $image_types[$i]; ?>"]').colorbox({maxWidth:"<?php echo $maxWidth; ?>", maxHeight:"<?php echo $maxHeight; ?>"});
+<?php } ?>
+    });
+</script><?php
+}
+
 ?>

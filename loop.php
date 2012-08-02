@@ -16,7 +16,7 @@
 			endif;
 			?>
 			<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-			<span class="writer"><?php the_author() ?> in <?php the_time('j.F Y') ?> <?php comments_popup_link(__('No Comments'), __('1 Comment'), __('% Comments')); ?></span>
+			<span class="writer"><?php the_author() ?> am <?php the_time('j.F Y') ?> <?php comments_popup_link(__('No Comments'), __('1 Comment'), __('% Comments')); ?></span>
 			<?php the_content('...more'); ?>
 			<div class="cl">&nbsp;</div>
 		</div>

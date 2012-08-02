@@ -2,7 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 
 <head profile="http://gmpg.org/xfn/11">
+<meta name="slug.ch" content="{4DDD2354-CC5A-969E-B48F-94616FC2362C}" />
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<meta name="description" content="<?php if ( is_single() ) {
+        single_post_title('', true);
+    } else {
+        bloginfo('description');
+    }
+    ?>" />
+<meta name="keywords" content="cubetech, gmbh, hosting, web, webdesign, bern, schweiz, infrastruktur, plone, mac, linux, windows, exchange, blog, seo, social media, facebook, twitter, neue medien" />
+<meta name="author" content="cubetech GmbH, http://www.cubetech.ch" />
+<meta name="language" content="de" />
+<meta name="robots" content="index,follow" />
 
 <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 
@@ -13,6 +24,21 @@
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 <?php wp_head(); ?>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24407907-1']);
+  _gaq.push(['_setDomainName', 'cubetech.ch']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </head>
 <body <?php body_class(); ?>>

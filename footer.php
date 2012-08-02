@@ -7,9 +7,9 @@
 		<div id="footer">
 			<!-- Shell -->
 			<div class="shell">
-				<a href="#top" class="top-link">Back to top?</a>
+				<a href="#top" class="top-link">Zur&uuml;ck nach oben?</a>
 				<!-- F Cols -->
-				<div class="f-cols">
+				<div class="f-cols" id="f-cols">
 					<ul>
 						<?php dynamic_sidebar('footer-sidebar'); ?>
 					</ul>
@@ -25,6 +25,7 @@
 							'container' => false,
 							'theme_location' => 'footer-menu',
 							'fallback_cb' => 'wp_page_menu',
+							'after' => '&nbsp;|',
 							);
 						wp_nav_menu( $args ); ?> 
 

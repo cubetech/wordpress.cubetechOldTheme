@@ -6,7 +6,9 @@
 	<!-- End Sidebar -->
 	<!-- Content -->
 	<div id="content">
+        <div class="content">
 		<?php get_template_part('loop', 'single'); ?>
+        </div>
 	</div>
 	<!-- End Content -->
 	<div class="cl">&nbsp;</div>
