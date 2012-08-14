@@ -131,12 +131,12 @@ h1#logo a { display: block; background: url(images/logo.png) no-repeat 0 0; heig
 
 #sidebar { width: 205px; float: left; display: inline; }
 #sidebar .widget { padding: 0 0 20px 0; }
-#sidebar .widget ul { padding: 0 0 20px 0; }
+#sidebar .widget ul { padding: 0 18px 20px 0; }
 #sidebar .widget ul li { display: block; }
 #sidebar .widget p { padding: 0 0 1em 0; }
 #sidebar .widget_nav_menu { padding: 0 0 23px 0; text-align: right; }
 #sidebar .widget_nav_menu h3 { font-family: 'Ubuntu', arial, sans-serif; color: #0b0b0b; font-weight: Bold; padding: 0;}
-#sidebar .widget_nav_menu ul li { font-family: 'Open Sans', helvetica, arial, sans-serif; font-weight: Bold; }
+#sidebar .widget_nav_menu ul li { font-family: 'Ubuntu', helvetica, arial, sans-serif; font-weight: 500; text-transform: uppercase; }
 #sidebar .widget_nav_menu ul li a {  }
 
 #content { width: 690px; float: right; display: inline; }
@@ -160,7 +160,7 @@ li { list-style: disc outside; margin-left: 20px; }
 .post p a.more-link { text-align: right; float: right; }
 .post img.right { padding: 0 0 18px 25px; }
 .post .tags { padding: 16px 0 22px 0; font-size: 11px; line-height: 14px; font-weight: Book; font-family: 'OpenSans', arial, sans-serif; }
-.post #respond { padding: 0 0 32px 0; float: left; }
+.post #respond { padding: 0 0 32px 0; float: left; width: 100%; }
 .post #respond textarea { width: 432px; height: 75px; padding: 8px; float: left; display: inline; margin: 0 0 10px 0; }
 .post #respond .fields { float: right; display: inline; width: 210px; padding-left: 30px; }
 .post #respond input#btn { float: left; display: inline; margin: 0 50px 0 0; }
