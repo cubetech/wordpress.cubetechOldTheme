@@ -239,7 +239,7 @@ ul.children ul.children ul.children a { margin-right: 60px; }
 #footer .f-bottom a { color: #f00; }
 #footer .f-bottom .copy { float: left; display: inline; }
 #footer .f-bottom .links { float: right; display: inline; }
-#footer .links ul li { display: inline; }
+#footer .links ul li { display: inline; margin-left: 0; }
 .post.loop img.attachment-featured-thumb { float: right; padding: 0 0 18px 25px; }
 .post.loop img.attachment-small-thumb { float: right; padding: 0 0 10px 25px; }
 img.attachment-big-thumb { float: right; padding: 0 0 18px 25px; }
