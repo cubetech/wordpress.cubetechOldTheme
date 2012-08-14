@@ -8,7 +8,7 @@
 			}
 			?>
 		<?php else : ?>
-			<div class="post small-post <?php if($i%2 == 0) echo 'left'; else echo 'right'; ?> loop">
+			<div class="post loop">
 			<?php 
 			if(has_post_thumbnail()) {
 				the_post_thumbnail('small-thumb');
@@ -17,7 +17,8 @@
 			?>
 			<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 			<span class="writer"><?php the_author() ?> am <?php the_time('j.F Y') ?> <?php comments_popup_link(__('No Comments'), __('1 Comment'), __('% Comments')); ?></span>
-			<?php the_content('...more'); ?>
+			<?php if($i==1): the_content(); else: $excerpt = get_the_content(); echo string_limit_words($excerpt,40); endif; ?>
+			<br /><a href="<?php echo get_permalink(); ?>">Mehr lesen...</a>
 			<div class="cl">&nbsp;</div>
 		</div>
 	<?php endwhile; ?>
