@@ -229,7 +229,7 @@ ul.children ul.children ul.children a { margin-right: 60px; }
 #footer .f-cols { padding: 40px 0 65px 0; }
 #footer .f-cols ul li { width: 15em; margin-left: 0; padding: 0 2.1em 0 0; float: left; display: inline; min-height: 20em; }
 #footer .f-cols ul li.last { padding: 0; }
-#footer .f-cols ul li h3 { padding: 0 0 33px 0; font-size: 18px; line-height: 18px; color: #2f2f2f; }
+#footer .f-cols ul li h3 { padding: 0 0 33px 0; font-size: 18px; line-height: 18px; color: #2f2f2f; margin-bottom: 0px !important; }
 #footer .f-cols ul li p { font-family: 'Open Sans', helvetica, arial, sans-serif; padding: 0 0 18px 0; line-height: 17px; color: #8a8a8a; }
 #footer .f-cols ul li.first p { font-family: 'Open Sans', helvetica, arial, sans-serif; }
 #footer .f-cols ul li a { color: #ff0000; }
@@ -272,7 +272,7 @@ img.attachment-big-thumb { float: right; padding: 0 0 18px 25px; }
 .titleportfolio { position: absolute; top: 260px; display: inline; float: left; }
 
 .label-hide { display: none; width: 0; overflow: hidden; height: 0; }
-.srp-widget-singlepost {
+body div.srp-widget-singlepost {
     padding: 0 !important;
     margin: 0 !important;
     border-bottom: 0 !important;
